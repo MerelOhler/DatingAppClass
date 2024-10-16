@@ -17,4 +17,14 @@ public class AppUser
     /// The user name for the app user
     /// </summary>
     public required string UserName { get; set; }
+
+    /// <summary>
+    /// the user's password hash
+    /// </summary>
+    public required byte[] PasswordHash { get; set; }
+
+    /// <summary>
+    /// the user's password salt
+    /// </summary>
+    public required byte[] PasswordSalt { get; set; }
 }
